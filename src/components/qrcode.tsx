@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
 import { FC } from "react";
-import {TextInput} from "react-native"
 
 interface QRCodeProps {
   url: string;
