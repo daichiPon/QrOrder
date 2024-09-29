@@ -2,30 +2,20 @@
 import React, { useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
 import { FC } from "react";
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RouteProp } from '@react-navigation/native';
+import { CompositeNavigationProp } from '@react-navigation/native';
+import { Text } from "react-native";
 
-interface QRCodeProps {
-  url: string;
+
+type QRCodeProps={
+  route: RouteProp<any, 'Menew'>;
+  navigation: CompositeNavigationProp<any, any>;
 }
 
-const QRCode: FC<QRCodeProps> = (props) => {
-    const [tableNumber,setTableNumber] = useState<number[]>([]);
+const QRCode: FC<QRCodeProps> = () => {
   return (
-    <QRCodeSVG
-        
-      value={props.url}
-      size={128}
-      bgColor={"#000000"}
-      fgColor={"#FFFFFF"}
-      level={"M"}
-      imageSettings={{
-        src: "/favicon.ico",
-        x: undefined,
-        y: undefined,
-        height: 24,
-        width: 24,
-        excavate: true,
-      }}
-    />
+    <Text>注文メニュー</Text>
   );
 };
 
