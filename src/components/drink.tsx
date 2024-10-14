@@ -1,9 +1,9 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "react-native";    
 
-const drink:React.FC<React.ReactNode> =()=>{
+const Drink:React.FC =()=>{
     return(
     <Text>drink</Text>
 )
 }
-export default drink
+export default Drink

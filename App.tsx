@@ -3,8 +3,8 @@ import { View, Text } from 'react-native'; // ViewとTextをインポート
 import { CompositeNavigationProp, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import QRCode from './components/qrcode';
-import Drink from "./components/drink"
+import QRCode from './src/components/qrcode';
+import Drink from "./src/components/drink"
 
 const Stack= createNativeStackNavigator()
 function App() {
