@@ -1,21 +1,15 @@
 "use client";
-import React, { useState } from "react";
-import { QRCodeSVG } from "qrcode.react";
-import { FC } from "react";
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { RouteProp } from '@react-navigation/native';
-import { CompositeNavigationProp } from '@react-navigation/native';
-import { Text } from "react-native";
+import * as React from 'react';
+import { Button, View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-type QRCodeProps={
-  route: RouteProp<any, 'Menew'>;
-  navigation: CompositeNavigationProp<any, any>;
-}
-
-const QRCode: FC<QRCodeProps> = () => {
+const QRCode: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
-    <Text>注文メニュー</Text>
+    <Button 
+      title="GotoDrink"
+      onPress={() => { navigation.navigate("ドリンク") }}
+    />
   );
 };
 
