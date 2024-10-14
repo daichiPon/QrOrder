@@ -2,10 +2,10 @@
   "name": "qrorder",
   "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "expo start",
+    "build": "expo build",
+    "test": "expo test",
+    "eject": "expo eject"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
